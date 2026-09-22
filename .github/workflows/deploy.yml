@@ -1,1 +1,17 @@
+name: Ecommerceproject CI/CD
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Test workflow
+        run: echo "Macreel CI/CD workflow is working!"
